@@ -9,6 +9,10 @@ anchor-spl.workspace = true
 solana-program.workspace = true
 solana-sdk.workspace = true
 litesvm.workspace = true
-testt.workspace = true
+
+testt= {path="../programs/testt"}
+
+
+
 
 

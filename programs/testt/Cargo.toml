@@ -19,10 +19,8 @@ idl-build = ["anchor-lang/idl-build","anchor-spl/idl-build"]
 [dependencies]
 anchor-lang.workspace = true
 anchor-spl.workspace = true
-
-[dev-dependencies]
 solana-program.workspace = true
 solana-sdk.workspace = true
 litesvm.workspace = true
-test-utils.workspace = true
+
 

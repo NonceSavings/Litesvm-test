@@ -3,10 +3,15 @@ pub mod errors;
 pub mod state;
 pub mod config;
 pub mod constants;
+// pub mod utilitys;
 
 use state::*;
 
 declare_id!("5r77gCrW8ifM3Qn8KUE4zLHFmbUNNPmL3ejnL1zBNYrD");
+
+pub fn get_id()->Pubkey{
+    ID
+}
 
 #[program]
 pub mod testt {
