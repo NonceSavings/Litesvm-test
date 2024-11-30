@@ -1,0 +1,23 @@
+[workspace]
+members = [
+    "programs/*"
+, "test-utils"]
+resolver = "2"
+
+[workspace.dependencies]
+anchor-lang = { version = "0.30.1", features = ["init-if-needed"] }
+anchor-spl = { version = "0.30.1", features = ["associated_token"] }
+litesvm = "0.2.1"
+solana-program = "1.18"
+solana-sdk = "1.18"
+testt = {path = "programs/testt"}
+test-utils = {path = "test-utils"}
+
+[profile.release]
+overflow-checks = true
+lto = "fat"
+codegen-units = 1
+[profile.release.build-override]
+opt-level = 3
+incremental = false
+codegen-units = 1
